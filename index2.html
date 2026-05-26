@@ -100,6 +100,10 @@
         width: 400px;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
         text-align: center;
+        transition: transform 0.3s ease;
+    }
+      .cartaoProduto :hover{
+        transform: translateY(-5px);
     }
     </style>
   </head>
@@ -155,7 +159,7 @@
       </section>
 
       <!--Seção sobre-->
-       <section id="sobre" class="container">
+      <section id="sobre" class="container">
         <h2 class="tituloSecao">Sobre a Compasso Musical.</h2>
         <div style="max-width: 800px;margin: 0 auto;text-align: center;">
             <p>
@@ -180,25 +184,27 @@
                 src="https://images.unsplash.com/photo-1649814111291-3a0a0985dff5?q=80&w=735&auto=f
                 ormat&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Guitarra Eletrica StratoCaster"
-                alt="Guitarra Elétrica Stratocaster"
                 width="300"
+                style="border-radius: 4px;
+                margin: bottom 1rem ;"
               />
               <p><strong>Marca:</strong> Fender</p>
               <p>
                 Guitarra clássica de alta performancel, ideal para rock e blues.
               </p>
-              <p><em>Preço: R$ 3.500,00</em></p>
-              <a href="#">Adicionar ao Carrinho</a>
+              <p style="color: #d32f2f;font-weight: bold;font-size: 1.2rem;"><em>Preço: R$ 3.500,00</em></p>
+              <a href="#" class="botaoPrincipal">Adicionar ao Carrinho</a>
             </article>
     
-            <article>
-              <h3>Bateria Acústica Profissonal roxa e preta.</h3>
+            <article class="cartaoProduto">
+              <h3 class="nomeProduto">Bateria Acústica Profissonal roxa e preta.</h3>
               <img
                 src="https://images.unsplash.com/photo-1568153354382-6bcd1d46568b?q=80&w=1332
                 &auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8
                 fHx8fA%3D%3D"
                 alt="Bateria Acústica Profissonal"
-                width="400" height="300"
+                width="300"
+                style="border-radius:4px ;margin-bottom: 1rem;"
               />
               <p><strong>Marca:</strong> Pearl</p>
               <p>
@@ -206,24 +212,24 @@
                 incorpado.
               </p>
               <p><em>Preço: R$ 25.000,00</em></p>
-              <a href="#">Adicionar ao Carrinho</a>
+              <a href="#" class="botaoPrincipal">Adicionar ao Carrinho</a>
             </article>
         </div>
       </section>
 
       <!--Seção Depoimentos-->
-      <section id="depoimentos">
-        <h2>O que nossos clientes dizem</h2>
-        <blockquote>
-          <p>
+      <section id="depoimentos" class="container">
+        <h2 class="tituloSecao">O que nossos clientes dizem</h2>
+        <blockquote style="background: #ffffff; padding: 2rem;border-left:5px solid #d32f2f;box-shadow: 0 2px rgba(0, 0, 0, 0.3);">
+          <p style="font-style: italic;">
             "A bateria chegou super rápido aqui em Cuiabá e perfeitamente
             embalada. O som é incrível."
           </p>
-          <footer><cite>- Gael Sinclair</cite></footer>
+          <footer style="margin-top: 1rem;font-weight: bold;"><cite>- Gael Sinclair</cite></footer>
         </blockquote>
         <br />
-        <blockquote>
-          <p>
+        <blockquote style="background: #ffffff; padding: 2rem;border-left:5px solid #d32f2f;box-shadow: 0 2px rgba(0, 0, 0, 0.3);">
+          <p style="font-style: italic;">
             "Gostaria de formalizar o recebimento da guitarra, adquirida
             recentemente em seu estabelecimento.É com satisfação que informo que
             o instrumento foi entregue em perfeitas condições, apresentando
@@ -235,7 +241,7 @@
             excelência no atendimento prestado. Reitero minha confiança em sua
             empresa para futuras transações comerciais."
           </p>
-          <footer>- <cite>Ravi Fontenelle</cite></footer>
+          <footer style="margin-top: 1rem;font-weight: bold;">- <cite>Ravi Fontenelle</cite></footer>
         </blockquote>
       </section>
       <!--Seção Contato-->
